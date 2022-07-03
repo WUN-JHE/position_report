@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Info Windows</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        
+    </head>
+    <body>
+        <div class="container-fluid" style="height: 100%;">
+            <div class="row" style="height: 10%;">
+                <div class="col" style="text-align: right;">
+                    <button type="button-xxl" class="btn btn-primary" id="en_map" style="margin: 5px;">開啟地圖</button>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="member_list_button" data-bs-toggle="dropdown" aria-expanded="false" style="margin: 5px;">ALL</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="member_list">
+                            <li><button class="dropdown-item" id="all">ALL</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+        
+        
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFCZSdiMA7G6KR27SbROK4sKkLHqCtWPQ"defer></script>
+        <script src="./index/index.js" type="module"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>

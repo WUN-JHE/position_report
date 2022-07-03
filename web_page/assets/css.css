@@ -1,0 +1,12 @@
+@media (max-width: 576px) {
+    #chart, #chartA, #chartB {
+        width: 500px;
+        height: 400px;
+    }
+}
+@media (min-width: 576px) {
+    #chart, #chartA, #chartB {
+        width: 600px;
+        height:400px;
+    }
+}
